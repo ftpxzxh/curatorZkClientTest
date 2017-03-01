@@ -6,6 +6,11 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 
+	<properties>
+		<mysql.version>5.1.32</mysql.version>
+		<slf4j.version>1.6.4</slf4j.version>
+	</properties>
+
 	<dependencies>
 
 		<dependency>
@@ -20,5 +25,23 @@
 			<version>2.7.0</version>
 		</dependency>
 
+		<!-- MySql -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>${mysql.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>${slf4j.version}</version>
+		</dependency>
+		<!-- Mybatis -->
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis</artifactId>
+			<version>3.2.8</version>
+		</dependency>
 	</dependencies>
 </project>
